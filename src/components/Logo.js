@@ -1,8 +1,7 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Logo() {
-    const location = useLocation();
     return (
         <div>
             <Link to="/" className="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1">

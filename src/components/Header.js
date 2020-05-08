@@ -8,15 +8,15 @@ function Header() {
             <NavWrapper>
                 <Logo />
 
-                <!-- Toggler button-->
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                {/* <!-- Toggler button--> */}
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Nav Links, when collapsed it becomes a dropdown menu-->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {/* 
+                <!-- Nav Links, when collapsed it becomes a dropdown menu--> */}
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html"><i
@@ -31,9 +31,8 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-                </div>
             </NavWrapper>
-        </header >
+        </header>
     )
 }
 export default Header;
