@@ -1,19 +1,15 @@
 import React from "react";
 import NavWrapper from "./NavWrapper";
 import Logo from "./Logo";
+import TogglerBtn from "./TogglerBtn";
 
 function Header() {
     return (
         <header>
             <NavWrapper>
                 <Logo />
+                <TogglerBtn />
 
-                {/* <!-- Toggler button--> */}
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 {/* 
                 <!-- Nav Links, when collapsed it becomes a dropdown menu--> */}
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
