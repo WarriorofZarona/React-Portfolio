@@ -1,16 +1,12 @@
 import React from "react";
-import NavWrapper from "./NavWrapper"
+import NavWrapper from "./NavWrapper";
+import Logo from "./Logo";
 
 function Header() {
     return (
         <header>
-            <NavWrapper />
-            <div class="container px-0">
-                <a class="navbar-brand d-lg-inline-block d-none bg-info p-2 mb-0 rounded text-light h1"
-                    href=" index.html">Andrew
-            Bautista</a>
-                <a class="navbar-brand d-inline-block d-lg-none bg-info p-2 mb-0 rounded text-light h1"
-                    href="index.html">AB</a>
+            <NavWrapper>
+                <Logo />
 
                 <!-- Toggler button-->
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
@@ -35,7 +31,7 @@ function Header() {
                         </li>
                     </ul>
                 </div>
-            </div>
+                </div>
             </NavWrapper>
         </header >
     )
