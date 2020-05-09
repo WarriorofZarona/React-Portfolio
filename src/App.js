@@ -1,54 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import PageTitle from "./components/PageTitle";
 import About from "./pages/About";
 import Footer from "./components/Footer";
-// import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import TitleContext from "./utils/TitleContext";
 
-function App() {
+class App extends Component {
+  state = { text: "" }
 
-  const [titleState, setTitleState] = useState({
-    title: ""
-  });
-
-  function changeTitle(title) {
-    switch (title) {
+  changeTitle = page => {
+    switch (page) {
       case "/":
-        titleState.title = "About";
-        setTitleState({ ...titleState, title });
+        this.setState({ text: "About Me" });
         break;
       case "/portfolio":
-        titleState.title = "Porfolio";
-        setTitleState({ ...titleState, title });
+        this.setState({ text: "Portfolio" });
         break;
       case "/contact":
-        titleState.title = "Contact";
-        setTitleState({ ...titleState, title });
+        this.setState({ text: "Contact" });
         break;
     }
   };
 
-  useEffect(() => {
-    // For demonstration purposes, we mock an API call.
-    changeTitle();
-  }, []);
+  componentDidMount() {
+    // const location = useLocation();
+    // let page = location.pathname;
+    let page = "/"
+    this.changeTitle(page)
+  }
 
-  return (
-    <Router>
-      <Header />
-      <TitleContext.Provider value={titleState}>
-        <PageTitle>
+  render() {
+    return (
+      <Router>
+        <Header />
+        <PageTitle text={this.state.text}>
           <Route exact path="/" component={About} />
-          {/* <Route exact path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} /> */}
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
         </PageTitle>
-      </TitleContext.Provider>
-      <Footer />
-    </Router>
-  )
+        <Footer />
+      </Router >
+    )
+  }
 }
 
 export default App;
