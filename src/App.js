@@ -11,7 +11,7 @@ import TitleContext from "./utils/TitleContext";
 class App extends Component {
   state = { text: "" }
 
-  changeTitle = page => {
+  changeText = page => {
     switch (page) {
       case "/":
         this.setState({ text: "About Me" });
@@ -29,7 +29,7 @@ class App extends Component {
     // const location = useLocation();
     // let page = location.pathname;
     let page = "/"
-    this.changeTitle(page)
+    this.changeText(page)
   }
 
   render() {
