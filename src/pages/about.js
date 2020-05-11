@@ -1,8 +1,11 @@
 import React from "react";
+import RowContainer from "../components/RowContainer";
 
 function About() {
     return (
-        <h1>About Me Render</h1>
+        <RowContainer>
+            <h1>About Me Render</h1>
+        </RowContainer>
     )
 };
 
