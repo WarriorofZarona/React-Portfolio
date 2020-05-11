@@ -16,7 +16,7 @@ function NavLinks() {
                         className="fas fa-project-diagram mr-1"></i>Portfolio</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}><i class="far fa-envelope mr-1"></i>Contact</Link>
+                    <Link to="/contact" className={location.pathname === "/contact" ? "nav-link active" : "nav-link"}><i className="far fa-envelope mr-1"></i>Contact</Link>
                 </li>
             </ul>
         </div>
