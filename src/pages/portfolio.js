@@ -32,20 +32,18 @@ function Portfolio() {
                             </div>
                         </div>
                         {/* Component? */}
-                        <p>
-                            <div className="row">
-                                <div className="col-1"></div>
-                                <div className="col-5">
-                                    <a href={project.github}><button type="button"
-                                        className="btn btn-info rounded"><i className="fab fa-github"></i>
+                        <div className="row">
+                            <div className="col-1"></div>
+                            <div className="col-5">
+                                <a href={project.github}><button type="button"
+                                    className="btn btn-info rounded"><i className="fab fa-github"></i>
                                       Github</button></a>
-                                </div>
-                                <div className="col-5">
-                                    <a href={project.deployed ? project.deployed : project.demo}><button type="button"
-                                        className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
-                                </div>
                             </div>
-                        </p>
+                            <div className="col-5">
+                                <a href={project.deployed ? project.deployed : project.demo}><button type="button"
+                                    className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
