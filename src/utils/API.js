@@ -124,3 +124,9 @@ const projects = [
         demo: ""
     }
 ];
+
+export default {
+    fetchProjects: function () {
+        return projects
+    }
+};
