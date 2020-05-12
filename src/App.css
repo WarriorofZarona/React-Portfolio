@@ -6,7 +6,7 @@ html, body {
 
 body {
   background-color: #ffffff;
-  background-image: url("./assets/images/Background/background.png");
+  background-image: url("./assets/images/background.png");
   display: flex;
   flex-direction: column;
 }
