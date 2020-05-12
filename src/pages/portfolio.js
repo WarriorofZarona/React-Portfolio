@@ -2,7 +2,7 @@ import React from "react";
 
 function Portfolio() {
     return (
-        <h1>Portfolio Render</h1>
+        <h1>Hi Gabengarci!</h1>
     )
 };
 
