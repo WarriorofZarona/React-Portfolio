@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ProjectsArr } from "../utils/Projects";
 
 function Portfolio() {
 
     return (
         ProjectsArr.map(project => (
-            <div>
+            <div key={project.id}>
                 <hr className="my-3" />
 
                 <div className="row">
