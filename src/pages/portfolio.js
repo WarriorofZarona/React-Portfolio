@@ -22,28 +22,30 @@ function Portfolio() {
                             <h3 className="text-info"><u>{project.title}</u></h3>
                             <div className="text-secondary">{project.description}
                             </div>
-                            <div className="text-secondary">{project.languages.map((languages, index, arr) => {
+                            <div className="text-secondary"><em>{project.languages.map((languages, index, arr) => {
                                 if (index === arr.length - 1) {
                                     return languages
                                 } else {
-                                    return languages + ", "
+                                    return languages + " | "
                                 }
-                            })}
+                            })}</em>
                             </div>
                         </div>
                         {/* Component? */}
-                        <div className="row">
-                            <div className="col-1"></div>
-                            <div className="col-5">
-                                <a href={project.github}><button type="button"
-                                    className="btn btn-info rounded"><i className="fab fa-github"></i>
+                        <p>
+                            <div className="row">
+                                <div className="col-1"></div>
+                                <div className="col-5">
+                                    <a href={project.github}><button type="button"
+                                        className="btn btn-info rounded"><i className="fab fa-github"></i>
                                       Github</button></a>
+                                </div>
+                                <div className="col-5">
+                                    <a href={project.deployed ? project.deployed : project.demo}><button type="button"
+                                        className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
+                                </div>
                             </div>
-                            <div className="col-5">
-                                <a href={project.deployed ? project.deployed : project.demo}><button type="button"
-                                    className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
-                            </div>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
