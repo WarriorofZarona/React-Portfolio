@@ -1,0 +1,13 @@
+export const Background = require("./background.png");
+export const Burger = require("./burger.png");
+export const CodingQuiz = require("./Coding-Quiz.png");
+export const DayPlanner = require("./Day-Planner.png");
+export const EmployeeDirectory = require("./Employee-Directory.png");
+export const GoodReadMeGenerator = require("./Good-README-Generator.png");
+export const HungryHub = require("./Hungry-Hub.png");
+export const NoteTaker = require("./Note-Taker.png");
+export const PasswordGenerator = require("./Password-Generator.png");
+export const Pfp = require("./pfp.jpg");
+export const TeamTemplate = require("./Team-Template.png");
+export const WeatherDashboard = require("./Weather-Dashboard.png");
+export const WorkoutTracker = require("./Workout-Tracker.png");
