@@ -4,7 +4,7 @@ function Contact() {
 
     return (
         <div className="col-lg-9 text-secondary">
-            <p className="lead">Please send all business inquiries to <a
+            <p className="lead">You can send an e-mail directly to <a
                 href="mailto:andrewbautista85@gmail.com">andrewbautista85@gmail.com.</a></p>
         </div>
     )
