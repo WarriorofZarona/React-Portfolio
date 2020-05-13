@@ -11,15 +11,16 @@ import "./App.css";
 function App() {
 
   return (
-    <Router>
-      <Header />
-      <PageTitle>
+
+    <Header />
+    <PageTitle>
+      <Router>
         <Route exact path="/" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
         <Route exact path="/contact" component={Contact} />
-      </PageTitle>
-      <Footer />
-    </Router >
+      </Router>
+    </PageTitle>
+    <Footer />
   )
 }
 
