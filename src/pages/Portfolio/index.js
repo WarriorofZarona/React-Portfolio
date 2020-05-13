@@ -3,6 +3,9 @@ import { ProjectsArr } from "../../utils/Projects";
 import RowContainer from "../../components/RowContainer";
 import ProjectImage from "../../components/ProjectImage"
 import Line from "../../components/Line";
+import ColSpacer from "../../components/ColSpacer";
+import ContentWrapper from "../../components/ContentWrapper";
+import ProjectContent from "../../components/ProjectContent"
 
 function Portfolio() {
 
@@ -11,24 +14,15 @@ function Portfolio() {
             <div key={project.id}>
                 {index !== 0 ? <Line /> : ""}
                 <RowContainer>
-                    <div className="col-lg-1"></div>
-                    <ProjectImage title={project.title} image={project.image} />
-
-                    <div className="col-lg-5">
-                        <div className="text-center mt-3">
-                            <h3 className="text-info"><u>{project.title}</u></h3>
-                            <div className="text-secondary">{project.description}
-                            </div>
-                            <div className="text-secondary"><em>{project.languages.map((languages, index, arr) => {
-                                if (index === arr.length - 1) {
-                                    return languages
-                                } else {
-                                    return languages + " | "
-                                }
-                            })}</em>
-                            </div>
-                        </div>
-                        {/* Component? */}
+                    <ColSpacer />
+                    <ProjectImage
+                        title={project.title}
+                        image={project.image} />
+                    <ContentWrapper>
+                        <ProjectContent
+                            title={project.title}
+                            description={project.description}
+                            languages={project.languages} />
                         <div className="row">
                             <div className="col-1"></div>
                             <div className="col-5">
@@ -41,7 +35,7 @@ function Portfolio() {
                                     className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
                             </div>
                         </div>
-                    </div>
+                    </ContentWrapper>
                 </RowContainer>
             </div>
         ))
