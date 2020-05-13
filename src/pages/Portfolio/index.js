@@ -6,6 +6,7 @@ import Line from "../../components/Line";
 import ColSpacer from "../../components/ColSpacer";
 import ContentWrapper from "../../components/ContentWrapper";
 import ProjectContent from "../../components/ProjectContent"
+import ProjectBtns from "../../components/ProjectBtns";
 
 function Portfolio() {
 
@@ -23,18 +24,10 @@ function Portfolio() {
                             title={project.title}
                             description={project.description}
                             languages={project.languages} />
-                        <div className="row">
-                            <div className="col-1"></div>
-                            <div className="col-5">
-                                <a href={project.github}><button type="button"
-                                    className="btn btn-info rounded"><i className="fab fa-github"></i>
-                                      Github</button></a>
-                            </div>
-                            <div className="col-5">
-                                <a href={project.deployed ? project.deployed : project.demo}><button type="button"
-                                    className="btn btn-info rounded"><i className={project.deployed ? "far fa-see" : "fab fa-youtube"}></i>{project.deployed ? "View Deployed" : "View Demo"}</button></a>
-                            </div>
-                        </div>
+                        <ProjectBtns
+                            github={project.github}
+                            deployed={project.deployed}
+                            demo={project.demo} />
                     </ContentWrapper>
                 </RowContainer>
             </div>
