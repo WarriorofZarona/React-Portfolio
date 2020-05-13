@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectsArr } from "../utils/Projects";
+import { ProjectsArr } from "../../utils/Projects";
 
 function Portfolio() {
 
