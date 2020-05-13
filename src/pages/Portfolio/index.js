@@ -1,21 +1,18 @@
 import React from "react";
 import { ProjectsArr } from "../../utils/Projects";
+import RowContainer from "../../components/RowContainer";
+import ProjectImage from "../../components/ProjectImage"
+import Line from "../../components/Line";
 
 function Portfolio() {
 
     return (
-        ProjectsArr.map(project => (
+        ProjectsArr.map((project, index) => (
             <div key={project.id}>
-                <hr className="my-3" />
-
-                <div className="row">
-
+                {index !== 0 ? <Line /> : ""}
+                <RowContainer>
                     <div className="col-lg-1"></div>
-                    <div className="col-lg-5">
-                        <img src={project.image}
-                            className="rounded mx-auto d-block img-fluid img-thumbnail imgsize" alt={project.title} />
-
-                    </div>
+                    <ProjectImage title={project.title} image={project.image} />
 
                     <div className="col-lg-5">
                         <div className="text-center mt-3">
@@ -45,7 +42,7 @@ function Portfolio() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </RowContainer>
             </div>
         ))
     )
