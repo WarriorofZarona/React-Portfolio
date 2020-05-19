@@ -11,3 +11,4 @@ export const Pfp = require("./pfp.jpg");
 export const TeamTemplate = require("./Team-Template.png");
 export const WeatherDashboard = require("./Weather-Dashboard.png");
 export const WorkoutTracker = require("./Workout-Tracker.png");
+export const GoogleBookSearch = require("./Google-Book-Search.png");

@@ -10,6 +10,7 @@ import {
     Burger,
     WorkoutTracker,
     EmployeeDirectory
+    GoogleBookSearch
 } from "../assets/images"
 
 export const ProjectsArr = [
@@ -121,6 +122,16 @@ export const ProjectsArr = [
         image: EmployeeDirectory,
         github: "https://github.com/warriorofzarona/workout-tracker/",
         deployed: "https://protected-depths-80302.herokuapp.com/",
+        demo: ""
+    },
+    {
+        id: 11,
+        title: "Google Books Search",
+        description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later.",
+        languages: ["HTML", "CSS", "Javascript", "Node.js", "REACT.js", "Express.js"],
+        image: GoogleBookSearch,
+        github: "https://github.com/WarriorofZarona/Google-Books-Search/",
+        deployed: "https://calm-tundra-54547.herokuapp.com/",
         demo: ""
     }
 ];
