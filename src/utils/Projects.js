@@ -9,8 +9,8 @@ import {
     NoteTaker,
     Burger,
     WorkoutTracker,
-    EmployeeDirectory
-    GoogleBookSearch
+    EmployeeDirectory,
+    GoogleBooksSearch
 } from "../assets/images"
 
 export const ProjectsArr = [
@@ -129,7 +129,7 @@ export const ProjectsArr = [
         title: "Google Books Search",
         description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later.",
         languages: ["HTML", "CSS", "Javascript", "Node.js", "REACT.js", "Express.js"],
-        image: GoogleBookSearch,
+        image: GoogleBooksSearch,
         github: "https://github.com/WarriorofZarona/Google-Books-Search/",
         deployed: "https://calm-tundra-54547.herokuapp.com/",
         demo: ""
