@@ -37,7 +37,7 @@ export const ProjectsArr = [
     {
         id: 2,
         title: "Day Planner",
-        description: "Displays current day schedule with ability add hourly events. Events are color- coded by time of day: past hour is in gray, current hour is in red, future hours are in green. Uses moment.js.",
+        description: "Displays current day schedule to add hourly events. Events are color-coded by time of day: past hour is in gray, current hour is in red, future hours are in green. Uses moment.js.",
         languages: ["HTML", "CSS", "Bootstrap", "Javascript", "jQuery"],
         image: DayPlanner,
         github: "https://github.com/warriorofzarona/Day-Planner/",
@@ -97,7 +97,7 @@ export const ProjectsArr = [
     {
         id: 8,
         title: "Eat-Da-Burger!",
-        description: "Enter a burger, then choose to devour the burger. Burgers appear on the left until devoured, then appear on the right.",
+        description: "Enter a burger, then choose to devour the burger. Burgers appear on the left until devoured, then appear on the right. Uses handlebars.js",
         languages: ["HTML", "CSS", "Javascript", "Node.js", "Express.js", "mySQL"],
         image: Burger,
         github: "https://github.com/warriorofzarona/burger/",
@@ -127,7 +127,7 @@ export const ProjectsArr = [
     {
         id: 11,
         title: "Google Books Search",
-        description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later.",
+        description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later. Uses Google Books API",
         languages: ["HTML", "CSS", "Javascript", "Node.js", "REACT.js", "Express.js"],
         image: GoogleBooksSearch,
         github: "https://github.com/WarriorofZarona/Google-Books-Search/",
