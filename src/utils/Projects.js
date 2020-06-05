@@ -140,7 +140,7 @@ export const ProjectsArr = [
         description: "Create a profile to search for other games with similar interests, then open a chat with them to create connections for multiplayer opportunities. This was collaborated project. Uses RAWG Games API.",
         languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js", "Express.js", "mySQL"],
         image: Waypoint,
-        github: "https://github.com/WarriorofZarona/Google-Books-Search/",
+        github: "https://github.com/WarriorofZarona/media-matcher",
         deployed: "https://calm-tundra-54547.herokuapp.com/",
         demo: ""
     }
