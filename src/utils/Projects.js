@@ -10,7 +10,8 @@ import {
     Burger,
     WorkoutTracker,
     EmployeeDirectory,
-    GoogleBooksSearch
+    GoogleBooksSearch,
+    Waypoint
 } from "../assets/images"
 
 export const ProjectsArr = [
@@ -118,7 +119,7 @@ export const ProjectsArr = [
         id: 10,
         title: "Employee Directory",
         description: "Business owners can use this app to quickly search and sort through their employee information. Uses RandomUser API.",
-        languages: ["HTML", "CSS", "Javascript", "Node.js", "REACT.js"],
+        languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js"],
         image: EmployeeDirectory,
         github: "https://github.com/warriorofzarona/workout-tracker/",
         deployed: "https://protected-depths-80302.herokuapp.com/",
@@ -127,9 +128,18 @@ export const ProjectsArr = [
     {
         id: 11,
         title: "Google Books Search",
-        description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later. Uses Google Books API",
-        languages: ["HTML", "CSS", "Javascript", "Node.js", "REACT.js", "Express.js"],
+        description: "Use the Search Bar to find books from Google Books, view them in the store, or save them for viewing later. Uses Google Books API.",
+        languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js", "Express.js", "MongoDB"],
         image: GoogleBooksSearch,
+        github: "https://github.com/WarriorofZarona/Google-Books-Search/",
+        deployed: "https://calm-tundra-54547.herokuapp.com/",
+        demo: ""
+    }, {
+        id: 12,
+        title: "Waypoint App Messenger",
+        description: "Create a profile to search for other games with similar interests, then open a chat with them to create connections for multiplayer opportunities. This was collaborated project. Uses RAWG Games API.",
+        languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js", "Express.js", "mySQL"],
+        image: Waypoint,
         github: "https://github.com/WarriorofZarona/Google-Books-Search/",
         deployed: "https://calm-tundra-54547.herokuapp.com/",
         demo: ""

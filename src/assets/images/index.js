@@ -12,3 +12,4 @@ export const TeamTemplate = require("./Team-Template.png");
 export const WeatherDashboard = require("./Weather-Dashboard.png");
 export const WorkoutTracker = require("./Workout-Tracker.png");
 export const GoogleBooksSearch = require("./Google-Books-Search.png");
+export const Waypoint = require("./Waypoint.png")
