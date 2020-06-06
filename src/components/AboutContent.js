@@ -12,8 +12,8 @@ function AboutContent() {
             <p className="lead">I've recently earned a certificate in Full Stack Development from Rutgers
             University, establishing skills in JavaScript, CSS, React.js, Node.js, as well as Express.js,
             mySQL, and MongoDB. I'm not afraid to get hands dirty to problem-solve programming
-            challenges, and I'm positioned to employ my leadership and technical skills combined with my
-            technical knowledge, making me an advantageous contributor to any development team.
+            challenges, and I'm positioned to employ my leadership as well as my combined technical skills and knowledge,
+            making me an advantageous contributor to any development team.
         </p>
         </div>
     )
