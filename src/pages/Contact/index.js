@@ -6,28 +6,31 @@ import Container from "../../components/Container";
 import EmailBtn from "../../components/EmailBtn";
 import LinkedInBtn from "../../components/LinkedInBtn";
 import TwitterBtn from "../../components/TwitterBtn";
+import Fade from "react-reveal/Fade";
 
 function Contact() {
 
     return (
         <Container>
-            <RowContainer>
-                <ColSpacer />
-                <ColSpacer />
-                <EmailBtn />
-            </RowContainer>
-            <br />
-            <RowContainer>
-                <ColSpacer />
-                <ColSpacer />
-                <LinkedInBtn />
-            </RowContainer>
-            <br />
-            <RowContainer>
-                <ColSpacer />
-                <ColSpacer />
-                <TwitterBtn />
-            </RowContainer>
+            <Fade>
+                <RowContainer>
+                    <ColSpacer />
+                    <ColSpacer />
+                    <EmailBtn />
+                </RowContainer>
+                <br />
+                <RowContainer>
+                    <ColSpacer />
+                    <ColSpacer />
+                    <LinkedInBtn />
+                </RowContainer>
+                <br />
+                <RowContainer>
+                    <ColSpacer />
+                    <ColSpacer />
+                    <TwitterBtn />
+                </RowContainer>
+            </Fade>
         </Container>
     )
 };

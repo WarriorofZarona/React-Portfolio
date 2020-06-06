@@ -7,30 +7,33 @@ import ColSpacer from "../../components/ColSpacer";
 import ContentWrapper from "../../components/ContentWrapper";
 import ProjectContent from "../../components/ProjectContent"
 import ProjectBtns from "../../components/ProjectBtns";
+import Fade from "react-reveal/Fade"
 
 function Portfolio() {
 
     return (
         ProjectsArr.map((project, index) => (
-            <div key={project.id}>
-                {index !== 0 ? <Line /> : ""}
-                <RowContainer>
-                    <ColSpacer />
-                    <ProjectImage
-                        title={project.title}
-                        image={project.image} />
-                    <ContentWrapper>
-                        <ProjectContent
+            <Fade bottom>
+                <div key={project.id}>
+                    {index !== 0 ? <Line /> : ""}
+                    <RowContainer>
+                        <ColSpacer />
+                        <ProjectImage
                             title={project.title}
-                            description={project.description}
-                            languages={project.languages} />
-                        <ProjectBtns
-                            github={project.github}
-                            deployed={project.deployed}
-                            demo={project.demo} />
-                    </ContentWrapper>
-                </RowContainer>
-            </div>
+                            image={project.image} />
+                        <ContentWrapper>
+                            <ProjectContent
+                                title={project.title}
+                                description={project.description}
+                                languages={project.languages} />
+                            <ProjectBtns
+                                github={project.github}
+                                deployed={project.deployed}
+                                demo={project.demo} />
+                        </ContentWrapper>
+                    </RowContainer>
+                </div>
+            </Fade>
         ))
     )
 };
