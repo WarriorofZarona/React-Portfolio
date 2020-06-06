@@ -121,8 +121,8 @@ export const ProjectsArr = [
         description: "Business owners can use this app to quickly search and sort through their employee information. Uses RandomUser API.",
         languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js"],
         image: EmployeeDirectory,
-        github: "https://github.com/warriorofzarona/workout-tracker/",
-        deployed: "https://protected-depths-80302.herokuapp.com/",
+        github: "https://github.com/WarriorofZarona/employee-directory",
+        deployed: "https://nameless-meadow-45326.herokuapp.com/",
         demo: ""
     },
     {
