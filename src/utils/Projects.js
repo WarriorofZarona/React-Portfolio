@@ -141,7 +141,7 @@ export const ProjectsArr = [
         languages: ["HTML", "CSS", "Javascript", "REACT.js", "Node.js", "Express.js", "mySQL"],
         image: Waypoint,
         github: "https://github.com/WarriorofZarona/media-matcher",
-        deployed: "https://calm-tundra-54547.herokuapp.com/",
+        deployed: "https://ancient-dusk-51587.herokuapp.com/",
         demo: ""
     }
 ];
