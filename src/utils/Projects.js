@@ -11,7 +11,8 @@ import {
     WorkoutTracker,
     EmployeeDirectory,
     GoogleBooksSearch,
-    Waypoint
+    Waypoint,
+    RecipeMaker
 } from "../assets/images"
 
 export const ProjectsArr = [
@@ -142,6 +143,15 @@ export const ProjectsArr = [
         image: Waypoint,
         github: "https://github.com/WarriorofZarona/media-matcher",
         deployed: "https://ancient-dusk-51587.herokuapp.com/",
+        demo: ""
+    }, {
+        id: 13,
+        title: "Recipe Maker",
+        description: "Add a Recipe, then view it in a list. *First project outside of bootcamp, learning Angular*",
+        languages: ["HTML", "CSS", "Javascript", "Angular.js", "Node.js", "Express.js", "MongoDB"],
+        image: RecipeMaker,
+        github: "https://github.com/WarriorofZarona/Recipe-Maker",
+        deployed: "https://stark-shore-06904.herokuapp.com/",
         demo: ""
     }
 ];
