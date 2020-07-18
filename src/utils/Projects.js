@@ -59,7 +59,7 @@ export const ProjectsArr = [
     {
         id: 4,
         title: "Weather Dashboard",
-        description: "Search for a city to see local current weather information as well as a five day forecast. Uses openweathermap API, which was a more complicated API which a lot of data, which I wanted to display cleanly for the user.",
+        description: "Search for a city to see local current weather information as well as a five day forecast. Uses openweathermap API. This was a project where I wanted to display the weather data cleanly for the user.",
         languages: ["HTML", "CSS", "Javascript", "jQuery"],
         image: WeatherDashboard,
         github: "https://github.com/warriorofzarona/Weather-Dashboard/",
