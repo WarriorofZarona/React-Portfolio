@@ -1,5 +1,5 @@
 import React from "react";
-import { Pfp } from "../assets/images/";
+import { Pfp } from "../assets/images";
 
 function ProfilePicture() {
     return (
