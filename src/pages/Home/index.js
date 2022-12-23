@@ -3,7 +3,7 @@ import { Sidebar } from "../../components/Sidebar";
 
 export const Home = () => (
     <div style={{ display: 'flex' }}>
-        <div>Nav here</div>
+        <Sidebar />
         <div>Body here</div>
     </div>
 );
