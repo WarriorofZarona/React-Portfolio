@@ -1,14 +1,26 @@
 /* This code is mainly for the sticky footer code, except for background color and image */
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-body {
+/* body {
   background-color: #ffffff;
   background-image: url("./assets/images/background.png");
   display: flex;
   flex-direction: column;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .content {
